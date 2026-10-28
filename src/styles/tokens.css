@@ -1,0 +1,18 @@
+:root {
+  --cream: #f9f3e5;
+  --cream-deep: #f0e6d4;
+  --brown: #4b2e20;
+  --brown-soft: #6b4a38;
+  --accent: #c47a4a;
+  --accent-soft: #d49268;
+  --white: #fffdf8;
+  --shadow-soft: 0 18px 40px rgba(75, 46, 32, 0.08);
+
+  --font-script: 'Great Vibes', cursive;
+  --font-sans: 'Source Sans 3', 'Segoe UI', sans-serif;
+
+  --max-width: 1120px;
+  --header-h: 4.5rem;
+  --radius-frame: 1.25rem;
+  --border-frame: 2px solid var(--accent);
+}

@@ -1,0 +1,117 @@
+@import './tokens.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--brown);
+  background:
+    radial-gradient(ellipse 80% 50% at 10% 0%, rgba(196, 122, 74, 0.12), transparent 55%),
+    radial-gradient(ellipse 70% 45% at 90% 20%, rgba(75, 46, 32, 0.06), transparent 50%),
+    linear-gradient(180deg, var(--cream) 0%, var(--cream-deep) 100%);
+  min-height: 100vh;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+h1,
+h2,
+.script {
+  font-family: var(--font-script);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.page {
+  width: min(100% - 2.5rem, var(--max-width));
+  margin-inline: auto;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 999px;
+  padding: 0.85rem 1.6rem;
+  border: 2px solid var(--brown);
+  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn-solid {
+  background: var(--brown);
+  color: var(--white);
+}
+
+.btn-solid:hover {
+  background: var(--brown-soft);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--brown);
+  border-color: var(--accent);
+}
+
+.btn-ghost:hover {
+  background: rgba(196, 122, 74, 0.12);
+}
+
+.frame {
+  border: var(--border-frame);
+  border-radius: var(--radius-frame);
+  overflow: hidden;
+  background: var(--white);
+  box-shadow: var(--shadow-soft);
+}
+
+.frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (max-width: 768px) {
+  .page {
+    width: min(100% - 1.5rem, var(--max-width));
+  }
+}

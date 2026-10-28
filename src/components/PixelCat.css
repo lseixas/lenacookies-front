@@ -1,0 +1,8 @@
+.pixel-cat {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  user-select: none;
+  pointer-events: none;
+  object-fit: contain;
+  flex-shrink: 0;
+}
