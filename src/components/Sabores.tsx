@@ -1,5 +1,7 @@
+import { saboresSlides } from '../data/gallery'
 import { menuCategories } from '../data/menu'
 import { useReveal } from '../hooks/useReveal'
+import { PhotoSlideshow } from './PhotoSlideshow'
 import './Sabores.css'
 
 export function Sabores() {
@@ -10,12 +12,11 @@ export function Sabores() {
       <h2 className="sabores__title">Sabores</h2>
 
       <div className="sabores__grid">
-        <div className="frame sabores__photo">
-          <img
-            src="/imgs/caixa-cookies-normais.jpeg"
-            alt="Caixa de cookies artesanais Doce Mordida"
-          />
-        </div>
+        <PhotoSlideshow
+          className="sabores__photo"
+          slides={saboresSlides}
+          label="Exemplares de cookies"
+        />
 
         <div className="sabores__menu">
           {menuCategories.map((category) => (

@@ -1,4 +1,6 @@
+import { sacolinhasSlides } from '../data/gallery'
 import { useReveal } from '../hooks/useReveal'
+import { PhotoSlideshow } from './PhotoSlideshow'
 import './Sacolinhas.css'
 
 export function Sacolinhas() {
@@ -15,12 +17,11 @@ export function Sacolinhas() {
         </p>
       </div>
 
-      <div className="frame sacolinhas__photo">
-        <img
-          src="/imgs/caixas-sacolas.jpeg"
-          alt="Caixa e sacolas kraft com laço Doce Mordida"
-        />
-      </div>
+      <PhotoSlideshow
+        className="sacolinhas__photo"
+        slides={sacolinhasSlides}
+        label="Caixas e sacolas"
+      />
     </section>
   )
 }
