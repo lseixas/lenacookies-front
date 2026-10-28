@@ -1,0 +1,33 @@
+---
+description: Obriga agentes a registrar tasks e manter docs/ atualizado
+alwaysApply: true
+---
+
+# Docs + task logging (always on)
+
+## Boot
+
+1. Ler `AGENTS.md` na raiz.
+2. Ler `docs/context/` antes de começar trabalho substantivo.
+3. Se a task usar cloud/ferramentas: ler `docs/access/`.
+4. Consultar `docs/specs/`, `docs/infra/`, `docs/plans/` e tasks recentes conforme o escopo.
+
+## Pastas em `docs/`
+
+- `tasks/` — registro de cada task (prompt, ações, decisões)
+- `context/` — overview e guias para agentes
+- `infra/` — ambientes e serviços
+- `plans/` — ideias e planos futuros
+- `specs/` — especificações de produto/área
+- `access/` — autenticação/uso de ferramentas (nunca secrets)
+
+## Ao finalizar (obrigatório)
+
+1. Criar `docs/tasks/YYYY-MM-DD_HHMM_<slug-curto>.md` a partir de `docs/tasks/_TEMPLATE.md`.
+2. Atualizar a tabela em `docs/tasks/README.md` (mais recente no topo).
+3. Ideias novas → `docs/plans/ideas.md` (entradas novas no topo).
+4. Sync no mesmo ciclo: `infra/`, `specs/`, `context/`, `access/` se algo mudou.
+
+## Em dúvida
+
+Perguntar ao humano — nunca assumir. Parar em decisões críticas ou de impacto no valor/projeto. Ver seção correspondente em `AGENTS.md`.
