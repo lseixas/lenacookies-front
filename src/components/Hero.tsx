@@ -1,3 +1,4 @@
+import { asset } from '../lib/asset'
 import './Hero.css'
 
 export function Hero() {
@@ -18,7 +19,7 @@ export function Hero() {
       <div className="hero__media">
         <div className="frame hero__frame">
           <img
-            src="/imgs/mesa-vaasilha-cookies.jpeg"
+            src={asset('imgs/mesa-vaasilha-cookies.jpeg')}
             alt="Cookies artesanais Doce Mordida em vasilha sobre a mesa"
           />
         </div>

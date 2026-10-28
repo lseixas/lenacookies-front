@@ -1,14 +1,15 @@
 import { useEffect, useState } from 'react'
+import { asset } from '../lib/asset'
 import './PixelCat.css'
 
 type CatPhase = 'idle' | 'turn1' | 'turn2' | 'sleep' | 'stretch'
 
 const FRAMES: Record<CatPhase, string> = {
-  idle: '/cat/idle.png',
-  turn1: '/cat/turn-1.png',
-  turn2: '/cat/turn-2.png',
-  sleep: '/cat/sleep.png',
-  stretch: '/cat/stretch.png',
+  idle: asset('cat/idle.png'),
+  turn1: asset('cat/turn-1.png'),
+  turn2: asset('cat/turn-2.png'),
+  sleep: asset('cat/sleep.png'),
+  stretch: asset('cat/stretch.png'),
 }
 
 /** Cycle: idle → turn → sleep (hold) → stretch → idle */

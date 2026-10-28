@@ -1,3 +1,4 @@
+import { asset } from '../lib/asset'
 import './Header.css'
 
 const links = [
@@ -12,7 +13,7 @@ export function Header() {
       <div className="site-header__inner page">
         <a className="site-header__brand" href="#topo" aria-label="Doce Mordida — início">
           <img
-            src="/imgs/logo-docemordida.jpeg"
+            src={asset('imgs/logo-docemordida.jpeg')}
             alt="Doce Mordida"
             className="site-header__logo"
           />
